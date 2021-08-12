@@ -1,6 +1,6 @@
 import React from "react";
 
-const ColorfulMessage = (props) => {
+export const ColorfulMessage = (props) => {
   //分割代入
   const { color, children } = props;
   const contentStyle = {
@@ -8,7 +8,7 @@ const ColorfulMessage = (props) => {
     fontSize: "18px"
   };
 
-  return <p style={contentStyle}>{props.children}</p>;
+  return <p style={contentStyle}>{children}</p>;
 };
 
-export default ColorfulMessage;
+// export default ColorfulMessage;
